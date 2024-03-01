@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo.png" class="logo" />
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-text">
+          <p>Data Analyst</p>
+          <h1><span>Hi, I'm Kinza Ali</span></h1>
+        </div>
+      </div>
+    </div>
+
+    <div id="about">
+      <div id="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/IMG_4193.jpeg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Passionate about crafting innovative data solutions, I bring
+              enthusiasm and dedication to the field of data engineering and
+              analytics. Eager to contribute my skills and learnings.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p> 
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('Education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Data Analysis</span><br />Turning data into insights for
+                  informed decisions
+                </li>
+                <li>
+                  <span>Python</span><br />Turning data into insights for
+                  informed decisions
+                </li>
+                <li>
+                  <span>Data warehouse</span><br />Turning data into insights
+                  for informed decisions
+                </li>
+                <li>
+                  <span>Docker</span><br />Turning data into insights for
+                  informed decisions
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>Data Engineer</span><br />Turning data into insights for
+                  informed decisions.
+                </li>
+                <li>
+                  <span>News Production</span><br />worked with news and
+                  production
+                </li>
+                <li>
+                  <span>PPRC</span><br />Asist Chair PPRC for press and public
+                  relations.
+                </li>
+                <li>
+                  <span>Assistant</span><br />Teacher Assistant at Roots
+                  International schhol system
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>Python programing</span><br />Python Programming</li>
+                <li>
+                  <span>BCMS</span><br />Bachelors of Media and Communication
+                  Sciences
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classlist.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classlist.remove("active-tab");
+            }
+        }
+    
+    </script>
+  </body>
+</html>
